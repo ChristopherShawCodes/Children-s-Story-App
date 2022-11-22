@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6693C1;
+    font-family: 'Roboto','sans-serif';
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 100vh;
+    max-height: 850px;
+    overflow: scroll;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav{
+    background-color: lightblue;
+    height: 4rem;
+    width: 100%;
+    opacity: 80%;
+    top: 0;
+    color: white;
+    font-family: fantasy;
+}
+
+nav h1{
+    margin-top: 20px;
+}
+
+.touch{
+    z-index: 0;
+    margin-right: 30px;
+    height: 60px;
+    width: 15%;
+    animation: pulse-white 1.5s infinite;
+}
+
+@keyframes pulse-white { 
+    0% {
+    padding:2px;
+    }
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: lightblue;
+}
+
+audio{
+    margin: 0 auto;
+    z-index: 4;
+}
+
+#z{
+    opacity: 30%;
+    height: 200px;
+    animation: pulse-white 5s ease infinite;
+}
+
+
+
+.zContainer{
+    z-index: -1;
+    opacity: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 75px;
+    position: absolute;
+}
+
+.instContainer{
+    margin: 0 auto;
+    margin-top: 40%;
+    width: 300px;
+    display: flex;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+
+.instructions{
+    color: lightblue;
+    font-style: italic;
+    cursor: pointer;
+    height: 40px;
+    width: 300px;
+    font-size: 24px;
+}
+
+
+.btn{
+    background-color: lightblue;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    font-family: fantasy;
+    cursor: pointer;
+    height: 60px;
+    width: 300px;
+    text-transform: capitalize;
+    opacity: 60%;
+}
+
+#buttons{
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+
+.btn:focus{
+    outline: none;
+}
+
+
+.show{
+    opacity: 100%;
+}
+
+
+
+
+.footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    color: silver;
+    width: 100%;
+    position: relative;
+}
+
+.logo{
+    margin-left: 8px;
+    color: white;
+}
+
+.icon{
+    width: 5%;
+}
+
+
+@media (max-width: 500px) and (min-width: 200px){
+    h1{
+        font-size: 2rem;
+    }
+    audio{
+        margin: 2px;
+    }
+}
